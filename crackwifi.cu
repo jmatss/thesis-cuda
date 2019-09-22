@@ -138,8 +138,8 @@ __global__ void findMatch(unsigned int* ssid, unsigned int* found, char* serialR
 
 	serial[3] += hexLookup[(threadIdx.x & 0x0f)]      << charLen*3;		// serial[3] = 't   '
 
-	serial[4] += 10  << charLen*0;    									// serial[4] = '   \n'
-	serial[4] += 128 << charLen*1;    									// serial[4] = '  d\n'
+	serial[4] += 10  << charLen*0;    					// serial[4] = '   \n'
+	serial[4] += 128 << charLen*1;    					// serial[4] = '  d\n'
 
 	// ASCII 0(48) -> 9(57) & a(97) -> f(102)               
 	for (unsigned int i = 48; i <= 102; i++) {
