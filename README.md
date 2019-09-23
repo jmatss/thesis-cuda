@@ -11,7 +11,7 @@ Usage:  crackwifi <12 hex SSID>
 ```
 
 ```
-C:\thesis>nvcc crackwifi.cu -o crackwifi >nul && crackwifi 38676c1698f0
+C:\thesis>nvcc crackwifi.cu -o crackwifi >NUL && crackwifi 38676c1698f0
 Serial:    00000000ad993618
 Hash:      392c797ca4ea72d6797d38676c1698f0
 SSID:      AutoPi-38676c1698f0
