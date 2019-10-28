@@ -123,7 +123,7 @@ __global__ void findMatch(unsigned int* ssid, unsigned int* found, char* serialR
 		serial[1] == '0000'
 		serial[2] == 'xyzr'
 		serial[3] == 'sijk'
-		serial[4] == '00d\n'	// d = 1 bit delimiter used by the md5 algorithm
+		serial[4] == '  d\n'	// d = 1 bit delimiter used by the md5 algorithm
 	*/
 
 	for (int i = 0; i < 4; i++) {
